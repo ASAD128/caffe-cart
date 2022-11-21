@@ -28,8 +28,9 @@ belongs :cart
 - Order:
 User can place order
 has_many order_items
-OrderItems:
+- OrderItems:
 It store order items and their quantity
+
 ## Ruby
 ruby 2.5.9
 
