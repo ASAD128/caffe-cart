@@ -1,0 +1,32 @@
+<%= form_with(model: order, local: true) do |form| %>
+    <% if order.errors.any? %>
+        <div id="error_explanation">
+          <h2>Sorry, Unable to create the order</h2>
+
+          <ul>
+            <% order.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.label :Total %>
+      <%= form.text_field :total %>
+    </div>
+
+    <div class="field">
+      <%= form.label :cart %>
+      <%= form.text_field :cart_id %>
+    </div>
+
+    <div class="field">
+      <%= form.label :payment_method %>
+      <%= form.collection_select :category_id, PaymentMethod.all, :id, :payment_type %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit "Create" %>
+    </div>
+<% end %>

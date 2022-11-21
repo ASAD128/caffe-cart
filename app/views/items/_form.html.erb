@@ -1,0 +1,46 @@
+<%= form_with(model: item, local: true) do |form| %>
+    <% if item.errors.any? %>
+        <div id="error_explanation">
+          <h2>Sorry, Unable to create the item</h2>
+
+          <ul>
+            <% item.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= form.file_field :image %>
+    </div>
+
+    <div class="field">
+      <%= form.label :description %>
+      <%= form.text_field :description %>
+    </div>
+
+    <div class="field">
+      <%= form.label :category %>
+      <%= form.collection_select :category_id, Category.all, :id, :name %>
+    </div>
+
+    <div class="field">
+      <%= form.label :tax_code %>
+      <%= form.collection_select :tax_id, Tax.all, :id, :code %>
+    </div>
+
+    <div class="field">
+      <%= form.label :discount_type %>
+      <%= form.collection_select :discount_id, Discount.all, :id, :discount_type %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit "Create" %>
+    </div>
+<% end %>
