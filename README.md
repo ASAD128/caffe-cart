@@ -1,24 +1,44 @@
-# README
+# Rails Shopping Cart
+## Overview and Features
+- Simple Rails application to order Coffee shop items
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+User is able to:
 
-Things you may want to cover:
+View all products
+Add/ remove products to/ from cart
+Add/ reduce quantity of products in cart
+Checkout cart by submitting order
+Enter order details
 
-* Ruby version
+Admin is able to:
 
-* System dependencies
+Create, edit and delete products
+View and delete/ fulfil all user orders
 
-* Configuration
+## Models
+- Items:
+Stores individual products/items and their details
+- Cart:
+User can add items to the Cart
+has_many :cart_items,
+has_many :items, through: :cart_items
+- CartItems:
+User can add items to the Cart
+belongs :cart
+- Order:
+User can place order
+has_many order_items
+OrderItems:
+It store order items and their quantity
+## Ruby
+ruby 2.5.9
 
-* Database creation
+## Rails
+Rails 5.2.8.1
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Build
+bundle install
+rails db:create
+bunlde exec rake db:migrate db:seed
+## Docker
+`docker-compose up --build`
