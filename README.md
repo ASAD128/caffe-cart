@@ -16,7 +16,7 @@ Create, edit and delete products
 View and delete/ fulfil all user orders
 
 ## Models
-- Items:
+- Item:
 Stores individual products/items and their details
 - Cart:
 User can add items to the Cart
