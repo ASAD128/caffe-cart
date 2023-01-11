@@ -65,3 +65,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "sidekiq", "~> 6.5"
 
 gem 'bootstrap', '~> 5.2', '>= 5.2.3'
+
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'rails-ujs', '~> 0.1.0'
