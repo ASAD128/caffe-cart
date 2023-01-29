@@ -1,24 +1,11 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
+/*!
+* Start Bootstrap - Grayscale v7.0.5 (https://startbootstrap.com/theme/grayscale)
+* Copyright 2013-2022 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
+*/
 //
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, or any plugin's
-// vendor/assets/javascripts directory can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file. JavaScript code in this file should be added after the last require_* statement.
-//
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
-// about supported directives.
-//
-//= require rails-ujs
-//= require activestorage
-//= require turbolinks
-//= require_tree .
-//= require jquery3
-//= require popper
-//= require bootstrap-sprockets
-//= require bootstrap
-
+// Scripts
+// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -36,7 +23,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
-    // Shrink the navbar
+    // Shrink the navbar 
     navbarShrink();
 
     // Shrink the navbar when page is scrolled
