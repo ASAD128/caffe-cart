@@ -1,6 +1,7 @@
-# Rails Shopping Cart
+# README
+Caffè Cart - A simple application to order your favorite coffee shop items
+
 ## Overview and Features
-- Simple Rails application to order Coffee shop items
 
 User is able to:
 
