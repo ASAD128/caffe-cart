@@ -1,7 +1,7 @@
 # README
-Caffè Cart - A simple application to order your favorite coffee shop items
+Caffe Cart - A simple application to order your favorite coffee shop items
 
-## Overview and Features
+## Features
 
 User is able to:
 
